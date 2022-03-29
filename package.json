@@ -7,19 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "start": "node ./dist/app.js",
-    "dev": "NODE_ENV=dev vite dev"
+    "dev": "NODE_ENV=dev vite dev",
+    "dev2": "npx swc ./app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.160",
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.23",
     "vite": "^2.8.6",
     "vite-plugin-node": "^0.0.18"
   },
   "dependencies": {
-    "@swc/core": "^1.2.160",
     "dotenv": "^16.0.0",
     "express": "^4.17.3"
   }
