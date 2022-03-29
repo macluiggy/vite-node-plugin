@@ -6,19 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "start": "NODE_ENV=dev vite dev",
-    "dev": "vite dev"
+    "start": "node ./dist/app.js",
+    "dev": "NODE_ENV=dev vite dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.13",
-    "@types/node": "^17.0.23"
+    "@types/node": "^17.0.23",
+    "vite": "^2.8.6",
+    "vite-plugin-node": "^0.0.18"
   },
   "dependencies": {
-    "vite": "^2.8.6",
-    "vite-plugin-node": "^0.0.18",
     "@swc/core": "^1.2.160",
     "dotenv": "^16.0.0",
     "express": "^4.17.3"
