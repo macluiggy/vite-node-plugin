@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "start": "vite start",
+    "start": "NODE_ENV=dev vite dev",
     "dev": "vite dev"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@swc/core": "^1.2.160",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   }
 }

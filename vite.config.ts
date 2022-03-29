@@ -1,11 +1,16 @@
 import { defineConfig } from 'vite';
 import { VitePluginNode } from 'vite-plugin-node';
+import dotenv from 'dotenv';
+dotenv.config();
+
+let port = process.env.PORT as unknown as number || 5000;
+console.log(port)
 
 export default defineConfig({
   // ...vite configures
   server: {
     // vite server configs, for details see [vite doc](https://vitejs.dev/config/#server-host)
-    port: 3000
+    port: port
   },
   plugins: [
     ...VitePluginNode({
